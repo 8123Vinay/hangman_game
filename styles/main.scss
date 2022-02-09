@@ -1,6 +1,7 @@
 @import "components/hangman.scss";
 @import "components/keyboard.scss";
 @import "components/word.scss";
+@import "components/gameOver.scss";
 
 button:hover{
     cursor: pointer;
@@ -59,4 +60,16 @@ button:hover{
 
 .startTitle{
   font-size:2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.won{
+    font-size:2rem;
+    position: relative;
+    top:10px;
+    left:30vw;
+    text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-.keys{
+.keysBefore{
     color:white;
     width:60px;
     height:60px;
@@ -16,13 +16,26 @@
   .keyBoard{
       display:flex;
       justify-content:center;
-      width:950px;
+      width:1050px;
       height:auto;
       flex-wrap:wrap;
-      position:absolute;
+      position: relative;;
       left:380px;
       border-radius:15%;
       padding:50px;
+      // border:2px solid black;
      
   }
+
+  .keysAfter{
+    color:black;
+    width:60px;
+    height:60px;
+    border-radius:30%;
+    margin:15px;
+    background: white;
+    font-size:1.2rem;
+  }
+
+ 
 
