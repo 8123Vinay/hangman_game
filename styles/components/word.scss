@@ -4,18 +4,15 @@
     gap:30px;
     margin:10px;
     margin-left: 40px;
+    position: absolute;
+    top:20vh;
+    left:40vw;
 }
 .place{
     font-size:3rem;
 }
 
-.space{
-  position:relative;
-  top:-4rem;
-}
-.wordVisible{
-    visibility: visible;
-}
-.wordHidden{
-    visibility: hidden;
+.word{
+    font-size:3rem;
+    font-weight:bold;
 }

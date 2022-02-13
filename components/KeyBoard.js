@@ -1,24 +1,18 @@
 import React from 'react'
 let string="QWERTYUIOPASDFGHJKLZXCVBNM";
+import {playSession} from '../apis/session.js'
 let array=[...string];
-export default function KeyBoard({playedLetters,setPlayedLetters,random,count,setCount,lives}) {
-  if(lives>0){
+
+export default function KeyBoard({response,setResponse}) {
+  if(!response.result){
   return (
     <div className='keyBoard' >
       {array.map((letter,index)=>{
-        let disable=playedLetters.has(letter);
         return(
-          <button className={disable ? "keysAfter" : "keysBefore"} key={index} 
-          onClick={(event)=>{
-            let letterPressed=event.target.innerText
-            let newSet=new Set(playedLetters);
-            newSet.add(letterPressed);
-            setPlayedLetters(newSet);
-            if(random.includes(letterPressed)){
-              setCount(count+1)
-            }
-            event.target.disabled=true;
-           
+          <button key={index} className="keysBefore" 
+          onClick={async (event)=>{
+            let newResponse=await playSession(response.id, event.target.innerText.toLowerCase())
+            setResponse(newResponse);         
           }}>{letter}</button>
         )
       })}
@@ -26,26 +20,16 @@ export default function KeyBoard({playedLetters,setPlayedLetters,random,count,se
    )
   }
   else{
+       
     return (
       <div className='keyBoard' >
         {array.map((letter,index)=>{
-          let disable=playedLetters.has(letter);
           return(
-            <button className={disable ? "keysAfter" : "keysBefore"} key={index} disabled
-            onClick={(event)=>{
-              let letterPressed=event.target.innerText
-              let newSet=new Set(playedLetters);
-              newSet.add(letterPressed);
-              setPlayedLetters(newSet);
-              if(random.includes(letterPressed)){
-                setCount(count+1)
-              }
-              event.target.disabled=true;
-             
-            }}>{letter}</button>
+            <button key={index} className="keysBefore" disabled>{letter}</button>
           )
         })}
       </div>
-     )
+     ) 
+     
   }
 }

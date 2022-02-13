@@ -1,14 +1,11 @@
 import React from 'react'
 
-export default function Word({wordToGuess,playedLetters,lives}) {
+export default function Word({maskedWord}) {
   return (
     <div className="wordSpace">
-         {wordToGuess.map((x,i)=>{
+         {maskedWord.map((letter,i)=>{
              return(
-              <div className="place" >
-                <h1 className={(playedLetters.has(x) || !lives) ? "wordVisible":"wordHidden"} key={i}>{x}</h1>
-                <h1 className="space">__</h1>
-              </div>
+                <h1 className="word"key={i}>{letter.toUpperCase()}</h1>
              )
            })}
     </div>

@@ -1,4 +1,14 @@
+.App{
+  overflow: hidden;
+  margin:0px;
+  font-family: cursive;
+  height:100vh;
+  // background-color:white;
+ 
+}
+
 .hangman{
+    z-index: 2;
     position:absolute;
     top:60px;
     left:150px;
@@ -6,7 +16,7 @@
      opacity: 0.2;
       &:not(:first-child){
         box-sizing:content-box;  
-        background:black;
+        background-color:black;
         width:10px;
         height:100px;
         position: absolute;
@@ -74,7 +84,7 @@
     box-sizing:content-box;    
     height:63px;
     width:10px;
-    background:black;
+    background-color:black;
     position:absolute;
     left:200px;
   }
