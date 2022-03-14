@@ -1,12 +1,11 @@
 import React from 'react'
 import {useState} from 'react'
 import {Game, GameOver,Start,PlayNext} from './components'
-import './styles/main.scss'
 import KeyBoard from './components/KeyBoard'
 
 
 
-
+// I want to change scss to normal tailwind CSS
 
 function App() {
   const [start,setStart]=useState(false);

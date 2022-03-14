@@ -1,0 +1,12 @@
+.hangman-container{
+    stroke:black; 
+    stroke-width:8px;
+    fill:transparent;
+    stroke-linecap: round;
+}
+
+.hangman{
+   display: none;
+}
+
+/* now I have to get the login to display depeding on the lives left */
