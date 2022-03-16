@@ -1,9 +1,5 @@
+const path=require('path')
 module.exports = {
-  content: [
-    './pages/**/*.{html,js}',
-    './components/**/*.{html,js}',
-    './*.{html,js}'
-  ],
   theme: {
     extend: {},
   },

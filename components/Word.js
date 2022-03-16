@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/Word.css'
 export default function Word({maskedWord}) {
   return (
     <div className="wordSpace">

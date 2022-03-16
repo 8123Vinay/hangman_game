@@ -1,0 +1,21 @@
+.wordSpace{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    position: absolute;
+    top:10vh;
+    right:10vw;
+}
+.word{
+    font-size:3rem;
+   
+}
+
+@media only screen and (max-width:800px){
+   .wordSpace{
+     top:280px;
+     left:0;
+     right:0;
+   }
+    
+}

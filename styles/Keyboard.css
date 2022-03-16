@@ -1,0 +1,29 @@
+.keyBoard{
+    position:absolute;
+    color:red;
+    bottom:100px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap:3px;
+}
+
+.keys{
+  background:black;
+  color:white;
+  border-radius:10px;
+  font-size:1.1rem;
+}
+/* i have to change style based on the  */
+@media only screen and (max-width: 800px){
+  .keyBoard{
+    top:400px;
+  }
+  .keys{
+    /* width:30px;
+    height:30px; */
+    border-radius: 5px;
+    font-size:0.8rem;
+  }
+}

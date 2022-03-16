@@ -5,8 +5,19 @@
     stroke-linecap: round;
 }
 
-.hangman{
-   display: none;
+.hide{
+   opacity:0.2;
 }
 
-/* now I have to get the login to display depeding on the lives left */
+.hangman-div{
+   position:absolute;
+   left:0;
+   top:0;
+}
+
+  
+line {
+    stroke: black;
+    stroke-width: 4;
+}
+  

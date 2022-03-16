@@ -1,0 +1,28 @@
+.start{
+  position:absolute;
+  left:250px;
+  top:30vh;
+}
+
+.input-field{
+    width:200px;
+    height:30px;
+}
+
+.startButton{
+    width:60px;
+    height:25px;
+    margin-left:10px;
+}
+
+.startButton:hover{
+    cursor: pointer;
+}
+
+@media only screen and  (max-width:800px){
+     /* Now i have to place it according to the viewport */
+     .start{
+         left:20vw;
+         top:35vh;
+     }
+}

@@ -1,0 +1,18 @@
+.App{
+        width:800px;
+        box-sizing:border-box;
+        height:80vh;
+        overflow: hidden;
+        border:2px solid black;
+        
+}
+
+
+@media only screen and (max-width:800px){
+    .App{
+        width:100vw;
+        left:0;
+        overflow: hidden;
+        height:100vh;
+    }
+}
