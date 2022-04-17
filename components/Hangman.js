@@ -55,7 +55,7 @@ export default function Hangman({index}) {
 
   <g id="body">
     <g id="head">
-    <circle cx="200" cy="80" r="20" stroke="black" stroke-width="4" fill="white" className={check(6-lives)? "" :"hide" }/>
+    <circle cx="200" cy="80" r="20" stroke="black" strokeWidth="4" fill="white" className={check(6-lives)? "" :"hide" }/>
       <g id="rEyes" className={check(1-lives)? "" :"hide" }>
       <circle cx="193" cy="80" r="4"/>
       <circle cx="207" cy="80" r="4"/>

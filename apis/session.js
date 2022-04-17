@@ -1,5 +1,5 @@
 export async function createSession(name){
-    let response =await fetch("http://localhost:3001", {
+    let response =await fetch("https://git.heroku.com/hanjman.git", {
         method:"POST",
         body:JSON.stringify({
            name:name
@@ -14,7 +14,7 @@ export async function createSession(name){
 }
 
 export async function playSession(id,letter){
-  let response=await fetch(`http://localhost:3001/play/${id}` ,
+  let response=await fetch(`https://git.heroku.com/hanjman.git/play/${id}` ,
   {
     method:"POST",
     body:JSON.stringify({
